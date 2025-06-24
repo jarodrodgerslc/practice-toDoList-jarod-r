@@ -1,14 +1,16 @@
 function ToDoList() {
-    const toDoListTasks = ["Learn React", 
-        "Build a project", 
+    const toDoListTasks = ["Learn React",
+        "Build a project",
         "Read documentation"]
 
     const individualTasks = toDoListTasks.map(task => <li>{task}</li>)
 
     return (
-<ul>
-    <li>{individualTasks}</li>
-</ul>
+        <ul className="list">
+            <li>{toDoListTasks[0]}</li>
+            <li>{toDoListTasks[1]}</li>
+            <li>{toDoListTasks[2]}</li>
+        </ul>
 
     );
 }
